@@ -19,7 +19,7 @@ npm install ui5-middleware-code-coverage-advanced --save-dev
 
 ## Usage - UI5-Tooling
 
-1. Define the dependency in `$yourapp/package.json`:
+1. Define the dependency in `$yourApp/package.json`:
 
 ```json
 "devDependencies": {
@@ -32,7 +32,7 @@ npm install ui5-middleware-code-coverage-advanced --save-dev
 }
 ```
 
-2. configure it in `$yourapp/ui5.yaml`:
+2. configure it in `$yourApp/ui5.yaml`:
 
 ```yaml
 server:
@@ -43,7 +43,7 @@ server:
     configuration:
       enabled: true
 ```
-## Usage - Testrunner
+## Usage - Test-Runner
 - extract the `window.__coverage__` during test run with your test-runner
   - [WDIO](https://webdriver.io/): [wdio-coverage-service](https://www.npmjs.com/package/wdio-coverage-service)
   - [Uiveri5](https://github.com/SAP/ui5-uiveri5) : TO MY KNOWLEDGE doesn't EXIST YET
