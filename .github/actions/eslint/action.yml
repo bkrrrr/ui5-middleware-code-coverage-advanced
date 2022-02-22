@@ -1,0 +1,9 @@
+name: 'eslint'
+description: 'see https://www.npmjs.com/package/eslint'
+runs:
+  using: "composite"
+  steps:
+     - uses: ./.github/actions/npm-init
+     - name: lint webapp
+       run: npx eslint .
+       shell: bash

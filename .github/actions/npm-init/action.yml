@@ -1,0 +1,22 @@
+name: 'npm install'
+description: 'Install npm from Cache'
+runs:
+  using: "composite"
+  steps:
+    - name: Cache node modules
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-node-modules
+      with: 
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+    - name: Config
+      run: npm config set prefer-offline true  # prefer prefer-offline for all npm i calls
+      shell: bash 
+    - name: Install Dependencies
+      run: npm ci
+      shell: bash

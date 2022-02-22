@@ -1,0 +1,12 @@
+# consider also https://github.com/streetsidesoftware/cspell-action
+name: 'cspell'
+description: 'see https://www.npmjs.com/package/cspell'
+runs:
+  using: "composite"
+  steps:
+      - name: install global modules
+        run: npm install -g cspell
+        shell: bash
+      - name: perform spellcheck 
+        run: cspell lint "**" --color --no-progress --relative  --show-suggestions --show-context --gitignore
+        shell: bash

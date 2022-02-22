@@ -13,7 +13,9 @@
     ],
     // words - list of words to be always considered correct
     "words": [
-        "Instrumenter"
+        "Instrumenter",
+        "wdio",
+        "Uiveri5"
     ],
     "ignorePaths": [
         "package.json",
