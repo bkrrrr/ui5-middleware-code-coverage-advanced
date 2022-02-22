@@ -1,0 +1,8 @@
+/dist/
+node_modules
+archive.zip
+.env
+.nyc_output
+allure-results
+coverage
+.DS_Store

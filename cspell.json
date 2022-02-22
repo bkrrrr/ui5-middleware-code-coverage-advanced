@@ -1,0 +1,30 @@
+// cSpell Settings
+{
+    // Version of the setting file.  Always 0.2
+    "version": "0.2",
+    "enabled": true,
+    "language": "en",
+    "dictionaries": [
+        "html",
+        "softwareTerms",
+        "misc",
+        "node",
+        "fonts"
+    ],
+    // words - list of words to be always considered correct
+    "words": [
+        "Instrumenter"
+    ],
+    "ignorePaths": [
+        "package.json",
+        "package-lock.json",
+        "ui5.yaml",
+        ".env",
+        ".eslintrc"
+    ],
+    "enableFiletypes": [
+        "js",
+        "xml",
+        "properties"
+    ]
+}
