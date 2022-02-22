@@ -5,5 +5,5 @@ runs:
   steps:
      - uses: ./.github/actions/npm-init
      - name: lint webapp
-       run: npx eslint webapp
+       run: npx eslint .
        shell: bash

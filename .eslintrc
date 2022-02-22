@@ -10,7 +10,8 @@
     },
     "globals": { },
     "ignorePatterns": [
-        ".nyc_output"
+        ".nyc_output",
+        "/test/fixtures"
     ],
     "rules": {
         "no-restricted-globals": [
