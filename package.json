@@ -1,12 +1,25 @@
 {
   "name": "ui5-middleware-code-coverage-advanced",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Code Coverage middleware for UI5-tooling",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/bkrrrr/ui5-middleware-code-coverage-advanced.git"
+  },
+  "keywords": [
+    "UI5-tooling",
+    "code-coverage",
+    "sapui5",
+    "openui5",
+    "UI5",
+    "NYC"
+  ],
   "main": "index.js",
   "scripts": {
     "link": "npm link --silent && cd ./test/fixtures/application.a && npm link ui5-middleware-code-coverage-advanced --silent",
     "test": "npm run link && NODE_PATH=./test/fixtures/application.a mocha  test/*.js --exit --timeout 10000"
   },
+ 
   "author": "Benedikt Kromer",
   "license": "MIT",
   "devDependencies": {
@@ -21,6 +34,5 @@
     "@ui5/logger": "*",
     "istanbul-lib-instrument": "*"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

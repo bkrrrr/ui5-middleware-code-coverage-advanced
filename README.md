@@ -1,3 +1,4 @@
+![CI](https://github.com/bkrrrr/ui5-middleware-code-coverage-advanced/actions/workflows/CI.yml/badge.svg)
 # ui5-middleware-code-coverage-advanced
 A code instrumenter for UI5-tooling with baseline-support.
 Middleware for [ui5-server](https://github.com/SAP/ui5-server), enabling code coverage.
