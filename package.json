@@ -17,7 +17,7 @@
   "main": "index.js",
   "scripts": {
     "link": "npm link --silent && cd ./test/fixtures/application.a && npm link ui5-middleware-code-coverage-advanced --silent",
-    "test": "npm run link && c8 --check-coverage --lines 100 npm run _test",
+    "test": "npm run link && c8 --check-coverage --lines 95 npm run _test",
     "_test": "mocha test/*.js --exit --timeout 10000"
   },
   "author": "Benedikt Kromer <benedikt.kromer@archsoft.de>",
